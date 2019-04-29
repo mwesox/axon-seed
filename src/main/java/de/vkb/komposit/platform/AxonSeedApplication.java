@@ -12,17 +12,17 @@ import java.math.BigDecimal;
 
 @SpringBootApplication
 @EnableSwagger2
-public class PlatformApplication implements ApplicationRunner {
+public class AxonSeedApplication implements ApplicationRunner {
 
     private final CommandGateway commandGateway;
 
-    public PlatformApplication(CommandGateway commandGateway) {
+    public AxonSeedApplication(CommandGateway commandGateway) {
         this.commandGateway = commandGateway;
     }
 
 
     public static void main(String[] args) {
-        SpringApplication.run(PlatformApplication.class, args);
+        SpringApplication.run(AxonSeedApplication.class, args);
     }
 
     @Override
