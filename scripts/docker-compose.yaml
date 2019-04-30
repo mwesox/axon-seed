@@ -1,13 +1,13 @@
 version: '3'
 services:
   axonserver:
-    image: axoniq/axonserver:latest
+    image: docker-vkb-virtual.repo01.vkbads.de/axoniq/axonserver:latest
     container_name: axonserver-vkb
     ports:
       - "8024:8024"
       - "8124:8124"
   mongo:
-    image: mongo:latest
+    image: docker-vkb-virtual.repo01.vkbads.de/mongo:latest
     container_name: "mongo-vkb"
     ports:
       - "27017:27017"
@@ -15,7 +15,7 @@ services:
       MONGO_INITDB_DATABASE: vkb
   mongo-express:
     container_name: mongo-express-vkb
-    image: mongo-express
+    image: docker-vkb-virtual.repo01.vkbads.de/mongo-express
     restart: always
     ports:
       - "8081:8081"
