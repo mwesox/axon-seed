@@ -3,6 +3,7 @@ package de.vkb.komposit.platform.vorschlag;
 import de.vkb.komposit.platform.vorschlag.aktionen.*;
 import de.vkb.komposit.platform.vorschlag.ereignisse.*;
 import de.vkb.komposit.platform.vorschlag.model.VorschlagId;
+import de.vkb.komposit.platform.vorschlag.model.objekt.Objekt;
 import lombok.NoArgsConstructor;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
@@ -18,9 +19,11 @@ public class Vorschlag {
     @AggregateIdentifier
     VorschlagId vorschlagId;
 
+    Objekt objekt;
+
     @CommandHandler
     public Vorschlag(VorschlagStarten vorschlagStarten) {
-        apply(new VorschlagGestartet(vorschlagStarten.getVorschlagId()));
+        apply(new VorschlagGestartet(vorschlagStarten.getVorschlagId(), vorschlagStarten.getKanal()));
     }
 
     @CommandHandler
@@ -52,6 +55,11 @@ public class Vorschlag {
     @EventSourcingHandler
     public void on(VorschlagGestartet vorschlagGestartet) {
         this.vorschlagId = vorschlagGestartet.getVorschlagId();
+    }
+
+    @EventSourcingHandler
+    public void on(RisikodatenEingegeben risikodatenEingegeben) {
+        this.objekt = risikodatenEingegeben.getObjekt();
     }
 
     @EventSourcingHandler

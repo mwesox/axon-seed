@@ -6,6 +6,7 @@ import de.vkb.komposit.platform.vorschlag.aktionen.VorschlagAnnehmen;
 import de.vkb.komposit.platform.vorschlag.aktionen.VorschlagStarten;
 import de.vkb.komposit.platform.vorschlag.ereignisse.VorschlagAngenommen;
 import de.vkb.komposit.platform.vorschlag.ereignisse.VorschlagGestartet;
+import de.vkb.komposit.platform.vorschlag.model.Kanal;
 import de.vkb.komposit.platform.vorschlag.model.VorschlagId;
 import de.vkb.komposit.platform.vorschlag.model.objekt.*;
 import org.axonframework.test.aggregate.AggregateTestFixture;
@@ -32,11 +33,11 @@ public class VorschlagTest {
     public void vorschlagStarten() {
         VorschlagId vorschlagId = VorschlagId.builder().id(UUID.randomUUID()).build();
         String produktId = UUID.randomUUID().toString();
-        VorschlagGestartet expectedEvent = new VorschlagGestartet(vorschlagId);
+        VorschlagGestartet expectedEvent = new VorschlagGestartet(vorschlagId, Kanal.KUNDENPORTAL);
 
         fixture
                 .givenNoPriorActivity()
-                .when(new VorschlagStarten(vorschlagId))
+                .when(new VorschlagStarten(vorschlagId, Kanal.KUNDENPORTAL))
                 .expectSuccessfulHandlerExecution()
                 .expectEvents(expectedEvent);
     }
@@ -46,7 +47,7 @@ public class VorschlagTest {
         VorschlagId vorschlagId = VorschlagId.builder().id(UUID.randomUUID()).build();
 
         fixture
-                .given(new VorschlagGestartet(vorschlagId))
+                .given(new VorschlagGestartet(vorschlagId, Kanal.KUNDENPORTAL))
                 .when(new VorschlagAnnehmen(vorschlagId))
                 .expectSuccessfulHandlerExecution()
                 .expectEvents(new VorschlagAngenommen(vorschlagId));

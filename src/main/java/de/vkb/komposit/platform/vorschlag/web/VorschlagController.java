@@ -4,10 +4,15 @@ import com.google.common.collect.Lists;
 import de.vkb.komposit.platform.vorschlag.aktionen.RisikodatenEingeben;
 import de.vkb.komposit.platform.vorschlag.aktionen.VorschlagStarten;
 import de.vkb.komposit.platform.vorschlag.ereignisse.RisikodatenEingegeben;
+import de.vkb.komposit.platform.vorschlag.model.Kanal;
 import de.vkb.komposit.platform.vorschlag.model.VorschlagId;
 import de.vkb.komposit.platform.vorschlag.model.objekt.*;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
 
 import java.util.List;
 import java.util.UUID;
@@ -23,23 +28,32 @@ public class VorschlagController {
         this.commandGateway = commandGateway;
     }
 
-    @PostMapping("")
+    @ApiResponses(
+
+            @ApiResponse(response = String.class, code = 200, message = "ID des Aggregats")
+    )
+    @ApiModelProperty(dataType = "string")
+    @PostMapping
     public CompletableFuture<String> starteVorschlag() {
         return this.commandGateway.send(new VorschlagStarten(VorschlagId
                 .builder()
                 .id(UUID.randomUUID())
-                .build())
+                .build(), Kanal.KUNDENPORTAL)
         );
     }
 
+    @ApiResponses(
+            @ApiResponse(response = String.class, code = 200, message = "Empty response")
+    )
     @PostMapping("{vorschlagId}/risikodaten")
-    public CompletableFuture<Object> risikodatenEingeben(@PathVariable String vorschlagId, @RequestBody RisikodatenEingegeben risikodatenEingegeben) {
+    public CompletableFuture<String> risikodatenEingeben(@PathVariable String vorschlagId, @RequestBody RisikodatenEingeben risikodatenEingeben) {
         //TODO create DTO for risikodatenEingeben without vorschlagID
-        return this.commandGateway.send(risikodatenEingegeben.toBuilder()
+        return this.commandGateway.send(risikodatenEingeben.toBuilder()
                 .vorschlagId(new VorschlagId(UUID.fromString(vorschlagId)))
                 .build());
     }
 
+    @ApiIgnore
     @GetMapping("/beispiel_rd")
     public RisikodatenEingeben generate() {
         return RisikodatenEingeben.builder()

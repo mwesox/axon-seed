@@ -8,7 +8,7 @@ import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
 @AllArgsConstructor(onConstructor = @__(@JsonCreator))
 @Getter
-@Builder
+@Builder(toBuilder = true)
 public class RisikodatenEingeben {
 
     @TargetAggregateIdentifier

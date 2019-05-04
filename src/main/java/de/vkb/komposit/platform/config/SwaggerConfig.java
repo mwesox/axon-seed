@@ -10,6 +10,8 @@ import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
+import java.util.concurrent.CompletableFuture;
+
 import static com.google.common.base.Predicates.or;
 import static springfox.documentation.builders.PathSelectors.regex;
 
@@ -19,12 +21,15 @@ public class SwaggerConfig {
     @Bean
     public Docket swaggerSpringMvcPlugin() {
         return new Docket(DocumentationType.SWAGGER_2)
+                .genericModelSubstitutes(CompletableFuture.class)
                 .groupName("VKB-Kompas-business-platform")
                 .apiInfo(apiInfo())
                 .select()
                 //Ignores controllers annotated with @CustomIgnore
                 .apis(Predicates.alwaysTrue()) //Selection by RequestHandler
+
                 .paths(paths()) // and by paths
+
                 .build();
         //      .apiInfo(apiInfo())
         //    .securitySchemes(securitySchemes())
