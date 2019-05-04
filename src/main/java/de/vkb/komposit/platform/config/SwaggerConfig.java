@@ -19,16 +19,16 @@ public class SwaggerConfig {
     @Bean
     public Docket swaggerSpringMvcPlugin() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("VKB-kompas-platform")
+                .groupName("VKB-Kompas-business-platform")
                 .apiInfo(apiInfo())
                 .select()
                 //Ignores controllers annotated with @CustomIgnore
                 .apis(Predicates.alwaysTrue()) //Selection by RequestHandler
-                        .paths(paths()) // and by paths
-                        .build();
-                  //      .apiInfo(apiInfo())
-                    //    .securitySchemes(securitySchemes())
-                      //  .securityContext(securityContext())
+                .paths(paths()) // and by paths
+                .build();
+        //      .apiInfo(apiInfo())
+        //    .securitySchemes(securitySchemes())
+        //  .securityContext(securityContext())
 
     }
 
@@ -52,10 +52,7 @@ public class SwaggerConfig {
     //Here is an example where we select any api that matches one of these paths
     private Predicate<String> paths() {
         return or(
-                regex("/vorschlag.*"),
-                regex("/vertrag.*"),
-                regex("/produkt.*"),
-                regex("/antrag.*")
-);
+                regex("/api.*")
+        );
     }
 }
