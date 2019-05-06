@@ -34,4 +34,8 @@ public class VorschlagProjektion {
         });
     }
 
+    public VorschlagDocument findVorschlag(String vorschlagId) {
+        return vorschlagRepository.findById(vorschlagId).get();
+    }
+
 }

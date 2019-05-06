@@ -1,12 +1,12 @@
 package de.vkb.komposit.platform.vorschlag.web;
 
-import com.google.common.collect.Lists;
 import de.vkb.komposit.platform.vorschlag.aktionen.RisikodatenEingeben;
 import de.vkb.komposit.platform.vorschlag.aktionen.VorschlagStarten;
-import de.vkb.komposit.platform.vorschlag.ereignisse.RisikodatenEingegeben;
 import de.vkb.komposit.platform.vorschlag.model.Kanal;
 import de.vkb.komposit.platform.vorschlag.model.VorschlagId;
 import de.vkb.komposit.platform.vorschlag.model.objekt.*;
+import de.vkb.komposit.platform.vorschlag.projektion.vorschlag.VorschlagDocument;
+import de.vkb.komposit.platform.vorschlag.projektion.vorschlag.VorschlagProjektion;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -23,9 +23,11 @@ import java.util.concurrent.CompletableFuture;
 public class VorschlagController {
 
     private final CommandGateway commandGateway;
+    private final VorschlagProjektion vorschlagProjektion;
 
-    public VorschlagController(CommandGateway commandGateway) {
+    public VorschlagController(CommandGateway commandGateway, VorschlagProjektion vorschlagProjektion) {
         this.commandGateway = commandGateway;
+        this.vorschlagProjektion = vorschlagProjektion;
     }
 
     @ApiResponses(
@@ -36,8 +38,8 @@ public class VorschlagController {
     @PostMapping
     public CompletableFuture<String> starteVorschlag() {
         return this.commandGateway.send(new VorschlagStarten(VorschlagId
-                .builder()
-                .id(UUID.randomUUID())
+                    .builder()
+                    .id(UUID.randomUUID())
                 .build(), Kanal.KUNDENPORTAL)
         );
     }
@@ -77,5 +79,11 @@ public class VorschlagController {
                 .vorschlagId(VorschlagId.builder().id(UUID.randomUUID()).build())
                 .build();
     }
+
+    @GetMapping("{vorschlagId}")
+    public VorschlagDocument getVorschlag(@PathVariable("vorschlagId") String vorschlagId) {
+        return vorschlagProjektion.findVorschlag(vorschlagId);
+    }
+
 
 }

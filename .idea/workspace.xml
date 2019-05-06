@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eded4b72-97d7-44a3-af36-91a50449fae3" name="Default Changelist" comment="foto aus event-storming hinzugeführt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/Kanal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagDocumentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagProjektion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/Vorschlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/Vorschlag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/RisikodatenEingeben.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/RisikodatenEingeben.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/VorschlagStarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/VorschlagStarten.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/ereignisse/VorschlagGestartet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/ereignisse/VorschlagGestartet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagProjektion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagProjektion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/web/VorschlagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/web/VorschlagController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/vkb/komposit/platform/VorschlagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/vkb/komposit/platform/VorschlagTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/Vorschlag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/Vorschlag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/aktionen/RisikodatenEingeben.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/aktionen/RisikodatenEingeben.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/aktionen/VorschlagStarten$VorschlagStartenBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/aktionen/VorschlagStarten$VorschlagStartenBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/aktionen/VorschlagStarten.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/aktionen/VorschlagStarten.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/ereignisse/VorschlagGestartet$VorschlagGestartetBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/ereignisse/VorschlagGestartet$VorschlagGestartetBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/ereignisse/VorschlagGestartet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/ereignisse/VorschlagGestartet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagDocument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/web/VorschlagController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/vorschlag/web/VorschlagController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/vkb/komposit/platform/config/SwaggerConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,105 +19,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/web/VorschlagController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/config/SwaggerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2-sources.jar!/springfox/documentation/spring/web/plugins/Docket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="296" column="39" selection-start-line="296" selection-start-column="16" selection-end-line="296" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2-sources.jar!/springfox/documentation/schema/Types.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#2900#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20-sources.jar!/io/swagger/annotations/ApiModelProperty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20-sources.jar!/io/swagger/annotations/ApiResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20-sources.jar!/io/swagger/annotations/ApiResponses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Objekt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/AnzahlObergeschosse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/RisikodatenEingeben.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="78">
+              <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,12 +108,12 @@
         <option value="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/Kanal.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/ereignisse/VorschlagGestartet.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/Vorschlag.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagProjektion.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/vkb/komposit/platform/VorschlagTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagDocument.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/AnzahlObergeschosse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/web/VorschlagController.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagProjektion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/web/VorschlagController.java" />
       </list>
     </option>
   </component>
@@ -236,8 +127,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="159" />
-    <option name="y" value="84" />
+    <option name="x" value="157" />
+    <option name="y" value="82" />
     <option name="width" value="960" />
     <option name="height" value="510" />
   </component>
@@ -249,8 +140,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -380,33 +269,6 @@
               <item name="komposit" type="462c0819:PsiDirectoryNode" />
               <item name="platform" type="462c0819:PsiDirectoryNode" />
               <item name="vorschlag" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="axon-seed" type="b2602c69:ProjectViewProjectNode" />
-              <item name="axon-seed" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-              <item name="vkb" type="462c0819:PsiDirectoryNode" />
-              <item name="komposit" type="462c0819:PsiDirectoryNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="vorschlag" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="objekt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="axon-seed" type="b2602c69:ProjectViewProjectNode" />
-              <item name="axon-seed" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-              <item name="vkb" type="462c0819:PsiDirectoryNode" />
-              <item name="komposit" type="462c0819:PsiDirectoryNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="vorschlag" type="462c0819:PsiDirectoryNode" />
               <item name="projektion" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -491,6 +353,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -599,6 +463,8 @@
       <workItem from="1556991327027" duration="6139000" />
       <workItem from="1556997549835" duration="384000" />
       <workItem from="1556997957381" duration="3956000" />
+      <workItem from="1557083910716" duration="28000" />
+      <workItem from="1557134601729" duration="2455000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1556550753972</created>
@@ -649,13 +515,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23595000" />
+    <option name="totallyTimeSpent" value="26078000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24930418" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26401082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -670,7 +535,7 @@
       <window_info anchor="bottom" id="Application Servers" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.21904762" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.54626864" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -703,7 +568,7 @@
       <window_info anchor="right" id="Bean Validation" order="17" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.52569944" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10735198" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -711,14 +576,14 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="0" />
-      <window_info anchor="bottom" id="CheckStyle" order="1" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="2" />
-      <window_info anchor="bottom" id="Flutter Performance" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="4" />
+      <window_info anchor="bottom" id="CheckStyle" order="0" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="1" />
+      <window_info anchor="bottom" id="Flutter Performance" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="3" />
+      <window_info anchor="bottom" id="Application Servers" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.22002634" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.54677206" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -726,19 +591,19 @@
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Terminal" order="15" weight="0.33465084" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.33412698" />
       <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="17" weight="0.32981783" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.32936507" />
       <window_info anchor="bottom" id="Spring" order="18" />
       <window_info anchor="bottom" id="Java Enterprise" order="19" />
       <window_info anchor="right" id="Flutter Inspector" order="0" />
-      <window_info anchor="right" id="Git Scope" order="1" side_tool="true" />
-      <window_info anchor="right" id="Mongo Explorer" order="2" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Flutter Outline" order="4" />
-      <window_info anchor="right" id="Jms Messenger" order="5" />
-      <window_info anchor="right" id="Google Cloud Storage" order="6" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Mongo Explorer" order="1" />
+      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="Flutter Outline" order="3" />
+      <window_info anchor="right" id="Jms Messenger" order="4" />
+      <window_info anchor="right" id="Google Cloud Storage" order="5" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Git Scope" order="7" side_tool="true" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="right" id="Palette" order="10" />
@@ -768,39 +633,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/konto/ereignisse/GeldAbgehoben.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/konto/web/KontoController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/konto/projektion/KontoRepository.java" />
-    <entry file="file://$PROJECT_DIR$/doc/event-storming.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/event-storming.PNG" />
     <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/konto/external/VPSCommandHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Vermietung.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Sanierungstyp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/KontoAggregate.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/ObjektTyp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Bauart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/ereignisse/VariantenErzeugt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -861,16 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/VariantenErzeugen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/VorschlagAnnehmen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -890,16 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Sanierung.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -943,29 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagDocumentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="94" selection-start-line="6" selection-start-column="94" selection-end-line="6" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/VorschlagStarten.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/event-storming.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/Kanal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -983,19 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/Vorschlag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="60" column="65" selection-start-line="60" selection-start-column="65" selection-end-line="60" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
-            <element signature="e#1979#1980#0" expanded="true" />
-            <element signature="e#2139#2140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/vkb/komposit/platform/VorschlagTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -1006,43 +785,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagDocument.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2-sources.jar!/springfox/documentation/spring/web/plugins/Docket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="4046">
+          <caret line="296" column="39" selection-start-line="296" selection-start-column="16" selection-end-line="296" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2-sources.jar!/springfox/documentation/schema/Types.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#2900#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagProjektion.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20-sources.jar!/io/swagger/annotations/ApiModelProperty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="969">
+          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/RisikodatenEingeben.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20-sources.jar!/io/swagger/annotations/ApiResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="697">
+          <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Objekt.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20-sources.jar!/io/swagger/annotations/ApiResponses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1056,58 +833,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20-sources.jar!/io/swagger/annotations/ApiResponses.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/config/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="170">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20-sources.jar!/io/swagger/annotations/ApiResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/doc/event-storming.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20-sources.jar!/io/swagger/annotations/ApiModelProperty.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/Vorschlag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2-sources.jar!/springfox/documentation/schema/Types.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="464">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
           <folding>
-            <element signature="e#0#2900#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2101#2102#0" expanded="true" />
+            <element signature="e#2164#2165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/web/VorschlagController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/ObjektTyp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="48" />
+        <state relative-caret-position="66">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Sanierungstyp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Sanierung.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2-sources.jar!/springfox/documentation/spring/web/plugins/Docket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Vermietung.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="296" column="39" selection-start-line="296" selection-start-column="16" selection-end-line="296" selection-end-column="39" />
+        <state relative-caret-position="66">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/config/SwaggerConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Bauart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+        <state relative-caret-position="66">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/model/objekt/Objekt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/RisikodatenEingeben.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/VariantenErzeugen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagDocumentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="94" selection-start-line="6" selection-start-column="94" selection-end-line="6" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/aktionen/VorschlagStarten.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/projektion/vorschlag/VorschlagProjektion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/vkb/komposit/platform/vorschlag/web/VorschlagController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
