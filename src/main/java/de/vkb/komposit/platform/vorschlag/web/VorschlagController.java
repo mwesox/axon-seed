@@ -1,6 +1,7 @@
 package de.vkb.komposit.platform.vorschlag.web;
 
 import de.vkb.komposit.platform.vorschlag.aktionen.RisikodatenEingeben;
+import de.vkb.komposit.platform.vorschlag.aktionen.VariantenErzeugen;
 import de.vkb.komposit.platform.vorschlag.aktionen.VorschlagStarten;
 import de.vkb.komposit.platform.vorschlag.model.Kanal;
 import de.vkb.komposit.platform.vorschlag.model.VorschlagId;
@@ -36,7 +37,7 @@ public class VorschlagController {
     )
     @ApiModelProperty(dataType = "string")
     @PostMapping
-    public CompletableFuture<String> starteVorschlag() {
+    public CompletableFuture<VorschlagId> starteVorschlag() {
         return this.commandGateway.send(new VorschlagStarten(VorschlagId
                     .builder()
                     .id(UUID.randomUUID())
@@ -48,7 +49,7 @@ public class VorschlagController {
             @ApiResponse(response = String.class, code = 200, message = "Empty response")
     )
     @PostMapping("{vorschlagId}/risikodaten")
-    public CompletableFuture<String> risikodatenEingeben(@PathVariable String vorschlagId, @RequestBody RisikodatenEingeben risikodatenEingeben) {
+    public CompletableFuture<VorschlagId> risikodatenEingeben(@PathVariable String vorschlagId, @RequestBody RisikodatenEingeben risikodatenEingeben) {
         //TODO create DTO for risikodatenEingeben without vorschlagID
         return this.commandGateway.send(risikodatenEingeben.toBuilder()
                 .vorschlagId(new VorschlagId(UUID.fromString(vorschlagId)))
@@ -85,5 +86,12 @@ public class VorschlagController {
         return vorschlagProjektion.findVorschlag(vorschlagId);
     }
 
+    @PostMapping("{vorschlagId}/varianten")
+    public CompletableFuture<VorschlagId> berechneVarianten(@PathVariable("vorschlagId") String vorschlagId) {
+        return this.commandGateway.send(
+                new VariantenErzeugen(VorschlagId.builder()
+                    .id(UUID.fromString(vorschlagId))
+                    .build()));
+    }
 
 }

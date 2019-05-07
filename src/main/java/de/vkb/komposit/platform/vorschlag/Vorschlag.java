@@ -2,13 +2,21 @@ package de.vkb.komposit.platform.vorschlag;
 
 import de.vkb.komposit.platform.vorschlag.aktionen.*;
 import de.vkb.komposit.platform.vorschlag.ereignisse.*;
+import de.vkb.komposit.platform.vorschlag.model.Beitrag;
 import de.vkb.komposit.platform.vorschlag.model.VorschlagId;
 import de.vkb.komposit.platform.vorschlag.model.objekt.Objekt;
+import de.vkb.komposit.platform.vorschlag.projektion.produkt.VerfuegbareProdukte;
+import de.vkb.komposit.platform.vorschlag.service.VariantenBerechnungsService;
 import lombok.NoArgsConstructor;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
+import org.axonframework.modelling.command.AggregateMember;
 import org.axonframework.spring.stereotype.Aggregate;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.math.BigDecimal;
+import java.util.List;
 
 import static org.axonframework.modelling.command.AggregateLifecycle.apply;
 
@@ -17,9 +25,19 @@ import static org.axonframework.modelling.command.AggregateLifecycle.apply;
 public class Vorschlag {
 
     @AggregateIdentifier
-    VorschlagId vorschlagId;
+    private VorschlagId vorschlagId;
 
-    Objekt objekt;
+    private Objekt objekt;
+
+    @AggregateMember
+    private List<Variante> varianten;
+
+    private VariantenBerechnungsService variantenBerechnungsService;
+
+    @Autowired
+    public void setVariantenBerechnungsService(VariantenBerechnungsService variantenBerechnungsService) {
+        this.variantenBerechnungsService = variantenBerechnungsService;
+    }
 
     @CommandHandler
     public Vorschlag(VorschlagStarten vorschlagStarten) {
@@ -34,7 +52,10 @@ public class Vorschlag {
 
     @CommandHandler
     public void variantenErzeugen(VariantenErzeugen variantenErzeugen) {
-        apply(new VariantenErzeugt(variantenErzeugen.getVorschlagId()));
+        if(varianten.size()>0){
+            throw new IllegalArgumentException("Varianten existieren bereits");
+        }
+        apply(new VariantenErzeugt(variantenErzeugen.getVorschlagId(), variantenBerechnungsService.berechne()));
     }
 
     @CommandHandler
@@ -54,6 +75,7 @@ public class Vorschlag {
 
     @EventSourcingHandler
     public void on(VorschlagGestartet vorschlagGestartet) {
+
         this.vorschlagId = vorschlagGestartet.getVorschlagId();
     }
 
@@ -64,7 +86,7 @@ public class Vorschlag {
 
     @EventSourcingHandler
     public void on(VariantenErzeugt variantenErzeugt) {
-
+        this.varianten = variantenErzeugt.getVarianten();
     }
 
     @EventSourcingHandler
@@ -81,7 +103,6 @@ public class Vorschlag {
     public void on(VorschlagAbgelehnt vorschlagAbgelehnt) {
 
     }
-
 
 
 }

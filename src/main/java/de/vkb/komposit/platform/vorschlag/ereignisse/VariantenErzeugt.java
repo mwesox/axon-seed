@@ -1,14 +1,18 @@
 package de.vkb.komposit.platform.vorschlag.ereignisse;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import de.vkb.komposit.platform.vorschlag.Variante;
 import de.vkb.komposit.platform.vorschlag.model.VorschlagId;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+
+import java.util.List;
 
 @AllArgsConstructor(onConstructor = @__(@JsonCreator))
 @Getter
 @Builder
 public class VariantenErzeugt {
     private VorschlagId vorschlagId;
+    private List<Variante> varianten;
 }

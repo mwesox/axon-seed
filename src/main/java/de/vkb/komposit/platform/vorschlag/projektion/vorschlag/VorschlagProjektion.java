@@ -2,6 +2,7 @@ package de.vkb.komposit.platform.vorschlag.projektion.vorschlag;
 
 import de.vkb.komposit.platform.vorschlag.aktionen.RisikodatenEingeben;
 import de.vkb.komposit.platform.vorschlag.ereignisse.RisikodatenEingegeben;
+import de.vkb.komposit.platform.vorschlag.ereignisse.VariantenErzeugt;
 import de.vkb.komposit.platform.vorschlag.ereignisse.VorschlagGestartet;
 import lombok.extern.java.Log;
 import org.axonframework.eventhandling.EventHandler;
@@ -31,6 +32,14 @@ public class VorschlagProjektion {
         vorschlagRepository.findById(risikodatenEingegeben.getVorschlagId().getId().toString()).ifPresent(e -> {
             e.setObjekt(risikodatenEingegeben.getObjekt());
             this.vorschlagRepository.save(e);
+        });
+    }
+
+    @EventHandler
+    public void on(VariantenErzeugt variantenErzeugt) {
+        vorschlagRepository.findById(variantenErzeugt.getVorschlagId().toString()).ifPresent(v -> {
+            v.setVarianten(variantenErzeugt.getVarianten());
+            this.vorschlagRepository.save(v);
         });
     }
 
